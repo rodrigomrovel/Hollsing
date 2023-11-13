@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0aef580cf3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login e Cadastro - Hollsing</title>
+</head>
+
+<body>
+    
+    <section class="container">
+
+        <img src="imagens/icone.png" id="logo">
+
+        <a href="index.html"><i class="fa-solid fa-xmark" class="iconeX"></i></a>
+
+        <!---- BOTÕES TOGGLE (ENTRAR e CADASTRAR) ---->
+
+        <div class="botoesFormulario">
+            <div class="corBotoes"></div>
+            <button id="botao-login">Entrar</button>
+            <button id="botao-cadastro">Cadastrar</button>
+        </div>
+
+        <!--------------------------------------------------------------------->
+
+
+        <!---- FORMULÁRIO DE LOGIN ---->
+
+        <form action="" method="post" id="formularioLogin">
+
+            <div class="input-single">
+                <input type="text" name="" id="email-box" class="input" required>
+                <label for="email-box">E-mail</label>
+            </div>
+
+            <div class="input-single">
+                <input type="password" name="" id="senha-box" class="input" required>
+                <label for="senha-box">Senha</label>
+                <i class="fa-solid fa-eye" id="btn-senha" onclick="mostrarSenha()"></i>
+            </div>
+
+            <div class="botao"><input type="submit" value="Entrar"></div>
+
+        </form>
+
+        <!--------------------------------------------------------------------->
+
+
+        <!---- FORMULÁRIO DE LOGIN ---->
+
+        <form action="" method="post" id="formularioCadastro">
+
+            <div class="input-single">
+                <input type="text" name="" id="emailCadastro-box" class="input" required>
+                <label for="emailCadastro-box">E-mail</label>
+            </div>
+
+            <div class="input-single">
+                <input type="password" name="" id="senhaCadastro-box" class="input" required>
+                <label for="senhaCadastro-box">Senha</label>
+                <i class="fa-solid fa-eye" id="btn-senhaCadastro" onclick="mostrarSenhaCadastro()"></i>
+            </div>
+
+            <div class="input-single">
+                <input type="password" name="" id="confirmarSenha-box" class="input" required>
+                <label for="confirmarSenha-box">Confirmar Senha</label>
+                <i class="fa-solid fa-eye" id="btn-confirmarSenha" onclick="ConfirmarSenha()"></i>
+            </div>
+
+            <div class="botao"><input type="submit" value="Cadastrar"></div>
+
+        </form>
+
+    </section>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

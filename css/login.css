@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagens/fundo.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container a i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5em;
+    padding: 8px;
+    color: #E6E6E6;
+    border-radius: 0px 0px 0px 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-left: 2px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#logo {
+    height: 75px;
+    width: 75px;
+    margin-top: 15px;
+}
+
+.botoesFormulario {
+    position: relative;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px blueviolet;
+}
+
+.botoesFormulario button {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    padding: 8px 30px;
+    background-color: transparent;
+}
+
+.corBotoes {
+    position: absolute;
+    height: 100%;
+    width: 115px;
+    transition: 0.5s;
+    border-radius: 20px;
+    background: linear-gradient(to right, #5956E9, #A963F8);
+}
+
+#botao-login, #botao-cadastro {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+form {
+    position: absolute;
+    height: 300px;
+    top: 160px;
+    transition: 0.5s;
+    padding: 0px 0px 0px 10px;
+}
+
+.input-single {
+    position: relative;
+    margin: 30px 0px;
+}
+
+.input-single label {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    cursor: text;
+    font-size: 14px;
+    color: #E6E6E6;
+    transition: all 0.3s ease;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    color: #FFFFFF;
+    padding: 2px 30px 2px 0px;
+    background-color: transparent;
+    border-bottom: 2px solid #E6E6E6;
+}
+
+.input-single i {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    cursor: pointer;
+    font-size: 0.85em;
+    color: #E7E7e7;
+}
+
+form .input-single .input:focus~label,
+form .input-single .input:valid~label {
+    font-size: 12px;
+    color: #FFFFFF;
+    transform: translateY(-22px);
+}
+
+.botao {
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit] {
+    height: 30px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: rgb(168, 91, 239);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#formularioLogin {
+    left: 25px;
+}
+
+#formularioCadastro {
+    left: 450px;
+}

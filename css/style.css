@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+/* ---- CABEÇALHO ---- */
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    z-index: 100;
+    background-color: #5C1F99;
+}
+
+#icone-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 33px;
+    width: 33px;
+    margin-left: 12px;
+}
+
+#icone-menu .linha {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    border-radius: 1.5px;
+    transition: all 0.4s linear;
+    background-color: #F2F2F2;
+}
+
+#icone-menu .linha.um {
+    top: 5px;
+}
+
+#icone-menu .linha.tres {
+    bottom: 5px;
+}
+
+#icone-menu.active .linha.um {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#icone-menu.active .linha.dois {
+    left: -100%;
+    opacity: 0;
+}
+
+#icone-menu.active .linha.tres {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.5s;
+    padding: 5px 10px;
+    z-index: 1;
+    color: #BFBFBF;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.15);
+}
+
+.menu ul li a:hover {
+    color: #FFFFFF;
+}
+
+.menu ul li a span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s;
+    border-radius: 15px;
+    border-bottom: 2px solid #FFFFFF;
+    transform: scale(0) translateY(50px);
+}
+
+.menu ul li a:hover span {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+#icone-usuario {
+    font-size: 28px;
+    border-radius: 50%;
+    margin-right: 12px;
+    color: #F2F2F2;
+    background-color: #303030;
+}
+
+/* ----------------------------------------------------------------*/
+
+
+/* ---- MENU - MOBILE ---- */
+
+.menu-mobile {
+    position: fixed;
+    height: 100vh;
+    width: 65vw;
+    left: -100%;
+    z-index: 100;
+    transition: 0.7s;
+    background-color: #B3B3B3;
+}
+
+.menu-mobile.open {
+    left: 0;
+}
+
+.menu-mobile ul {
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.menu-mobile ul li a {
+    display: block;
+    margin-top: 25px;
+    padding: 10px 0px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------------------------------------------------------------*/
+
+
+/* ---- CARROSSEL ---- */
+
+.carrossel {
+    height: 175px;
+    width: 100vw;
+    overflow: hidden;
+    margin: 5px 0px;
+}
+
+.carrossel-conteudo {
+    display: flex;
+    height: 175px;
+    width: 400%;
+}
+
+.carrossel-conteudo input {
+    display: none;
+}
+
+.imagens-carrossel {
+    height: 175px;
+    width: 100%;
+}
+
+.carrossel-box {
+    position: relative;
+    height: auto;
+    width: 25%;
+    text-align: center;
+    transition: 1s;
+}
+
+.carrossel-box img {
+    height: 100%;
+    width: 100%;
+}
+
+.navegacao-manual,
+.navegacao-automatica {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.navegacao-manual .botao-manual,
+.navegacao-automatica div {
+    padding: 7px;
+    transition: 0.6s;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+
+.navegacao-manual .botao-manual:not(:last-child),
+.navegacao-automatica div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked~.navegacao-automatica .botao-auto01 {
+    background-color: #FFFFFF;
+}
+
+#radio2:checked~.navegacao-automatica .botao-auto02 {
+    background-color: #FFFFFF;
+}
+
+#radio3:checked~.navegacao-automatica .botao-auto03 {
+    background-color: #FFFFFF;
+}
+
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+/* ----------------------------------------------------------------*/
+
+
+/* ---- DESTAQUES ---- */
+
+#destaques {
+    font-size: 0.9em;
+    padding: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #5C1F99;
+}
+
+#imagens-destaques {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    height: 160px;
+    width: 230px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #F2F2F2;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cartao img {
+    height: 135px;
+    width: 100%;
+}
+
+.cartao-conteudo h3 {
+    font-size: 9px;
+    text-align: center;
+}
+
+#cartao5,
+#cartao6 {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    height: 100vh;
+    width: 200vw;
+    top: 60px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.7s ease;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.menu-mobile.open ~ .overlay {
+    left: 65vw;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ----------------------------------------------------------------*/
+
+
+/* ---- RODAPÉ ---- */
+
+footer {
+    padding: 15px 0;
+    margin-top: 20px;
+    color: #333333;
+    background-color: #BFBFBF;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rodape-item {
+    flex: 1;
+    max-width: 200px;
+    margin: 0 25px;
+}
+
+.rodape-item h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #262626;
+}
+
+.rodape-item ul {
+    padding: 0;
+    list-style: none;
+}
+
+.rodape-item ul li {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.rodape-item a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #333333;
+}
+
+.rodape-item i {
+    margin-right: 5px;
+}
+
+.direitos-autorais {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #BFBFBF;
+}
+
+.direitos-autorais p {
+    font-size: 11px;
+    margin-top: 10px;
+    color: #595959;
+}

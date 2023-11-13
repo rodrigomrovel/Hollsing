@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0aef580cf3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <title>Hollsing - Loja de Artes Digitais</title>
+</head>
+
+<body>
+
+    <!---- CABEÇALHO ---->
+
+    <header id="cabecalho">
+
+        <div id="icone-menu">
+            <span class="linha um"></span>
+            <span class="linha dois"></span>
+            <span class="linha tres"></span>
+        </div>
+
+        <img src="imagens/logo.png" id="logo">
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início<span></span></a></li>
+                <li><a href="#">Coleções<span></span></a></li>
+                <li><a href="#">Contatos<span></span></a></li>
+            </ul>
+        </nav>
+
+        <a href="login.html"><i class="fa-solid fa-circle-user" id="icone-usuario"></i></a>
+
+    </header>
+
+    <!-------------------------------------------------------------------->
+
+
+    <!---- MENU - MOBILE ---->
+
+    <nav class="menu-mobile">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Coleções</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <!-------------------------------------------------------------------->
+
+
+    <!---- CARROSSEL ---->
+
+    <section class="carrossel">
+
+        <div class="carrossel-conteudo">
+
+            <input type="radio" name="botao-radio" id="radio1">
+            <input type="radio" name="botao-radio" id="radio2">
+            <input type="radio" name="botao-radio" id="radio3">
+
+            <div class="carrossel-box primeiro">
+                <img src="imagensCarrossel/imagem01.jpg" class="imagens-carrossel">
+            </div>
+
+            <div class="carrossel-box">
+                <img src="imagensCarrossel/imagem02.jpg" class="imagens-carrossel">
+            </div>
+
+            <div class="carrossel-box">
+                <img src="imagensCarrossel/imagem03.jpg" class="imagens-carrossel">
+            </div>
+
+            <div class="navegacao-automatica">
+                <div class="botao-auto01"></div>
+                <div class="botao-auto02"></div>
+                <div class="botao-auto03"></div>
+            </div>
+
+            <div class="navegacao-manual">
+                <label for="radio1" class="botao-manual"></label>
+                <label for="radio2" class="botao-manual"></label>
+                <label for="radio3" class="botao-manual"></label>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-------------------------------------------------------------------->
+
+
+    <!---- DESTAQUES ---->
+
+    <h2 id="destaques">Destaques</h2>
+
+    <section id="imagens-destaques">
+
+        <div class="cartao-container" id="cartao1">
+            <div class="cartao">
+                <img src="imagensDestaques/imagem01.jpg">
+                <div class="cartao-conteudo">
+                    <h3>Nome da Imagem</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartao-container" id="cartao2">
+            <div class="cartao">
+                <img src="imagensDestaques/imagem02.jpg">
+                <div class="cartao-conteudo">
+                    <h3>Nome da Imagem</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartao-container" id="cartao3">
+            <div class="cartao">
+                <img src="imagensDestaques/imagem03.jpg">
+                <div class="cartao-conteudo">
+                    <h3>Nome da Imagem</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartao-container" id="cartao4">
+            <div class="cartao">
+                <img src="imagensDestaques/imagem04.jpg">
+                <div class="cartao-conteudo">
+                    <h3>Nome da Imagem</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartao-container" id="cartao5">
+            <div class="cartao">
+                <img src="imagensDestaques/imagem05.jpg">
+                <div class="cartao-conteudo">
+                    <h3>Nome da Imagem</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartao-container" id="cartao6">
+            <div class="cartao">
+                <img src="imagensDestaques/imagem06.jpg">
+                <div class="cartao-conteudo">
+                    <h3>Nome da Imagem</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------------------------------------------------------------->
+
+
+    <!---- RODAPÉ ---->
+
+    <footer>
+
+        <div class="rodape-container">
+
+            <div class="rodape-item">
+
+                <h3>Contato</h3>
+
+                <ul>
+                    <li>Email: <a>Hollsign.Studios@gmail.com</a></li>
+                </ul>
+
+            </div>
+
+            <div class="rodape-item">
+
+                <h3>Redes Sociais</h3>
+
+                <ul>
+                    <li><a href="https://www.instagram.com/hollsignstudios/"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="direitos-autorais">
+            <p>&copy; 2023 Hollsing. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
+    <section class="overlay"></section>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
