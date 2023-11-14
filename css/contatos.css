@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    background-image: url(../imagens/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+body a i {
+    padding: 20px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+}
+
+.contatos .conteudo {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contatos .conteudo h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contatosInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container .contatosInfo .box {
+    display: flex;
+    position: relative;
+    padding: 20px 0px;
+}
+
+.container .contatosInfo .box .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 22px;
+    min-width: 60px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.container .contatosInfo .box .texto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.FormularioContato {
+    width: 40%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.FormularioContato h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.FormularioContato .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.FormularioContato .inputBox input,
+.FormularioContato .inputBox textarea {
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 16px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 2px solid #333333;
+}
+
+.FormularioContato .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0px;
+    font-size: 16px;
+    margin: 10px 0px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666666;
+}
+
+.FormularioContato .inputBox input:focus~span,
+.FormularioContato .inputBox input:valid~span,
+.FormularioContato .inputBox textarea:focus~span,
+.FormularioContato .inputBox textarea:valid~span {
+    font-size: 13px;
+    color: #5C1F99;
+    transform: translateY(-20px);
+}
+
+.FormularioContato .inputBox input[type="submit"] {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background-color: blueviolet;
+}
+
+@media (max-width: 991px) {
+
+    .contatos {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contatosInfo {
+        margin-bottom: 40px;
+    }
+
+    .container .contatosInfo,
+    .FormularioContato {
+        width: 100%;
+    }
+
+    .FormularioContato h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+}
